@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import profilePic from "../../assets/Raw_image_edited_circle_v2.webp";
 import { FaTimes, FaRegDotCircle } from "react-icons/fa";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { FaLinkedin } from "react-icons/fa";
+import { BsArrowDown } from "react-icons/bs";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,16 +11,16 @@ const Header = () => {
   return (
     <>
       <header className="w-full bg-white font-figtree">
-        <div className="container mx-auto px-6 md:px-16 lg:px-32 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-1 md:px-0 lg:px-32 py-4 flex justify-between items-center">
           {/* Logo */}
-          <div className="text-4xl md:text-5xl  font-bold text-[#04263e] tracking-tight">manoj</div>
+          <div className="text-4xl md:text-4xl  font-bold text-[#04263e] tracking-tight">manoj</div>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6 lg:space-x-8 text-base font-medium">
             <a href="#" className="text-gray-900 hover:text-[#0370DD]">Home</a>
             <a href="#" className="text-gray-900 hover:text-[#0370DD]">Work</a>
             <a href="#" className="text-gray-900 hover:text-[#0370DD]">About</a>
-            <a href="#" className="text-gray-900 hover:text-[#0370DD]">Resume</a>
+            <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-[#0370DD]">Resume</a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -45,7 +47,7 @@ const Header = () => {
                 <a href="#" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-md hover:translate-x-1 duration-300">Home</a>
                 <a href="#" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Work</a>
                 <a href="#" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">About</a>
-                <a href="#" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Resume</a>
+                <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Resume</a>
               </nav>
             </div>
             {/* Clickable Overlay to Close Sidebar */}
@@ -55,30 +57,30 @@ const Header = () => {
       </header>
 
       {/* Profile Section */}
-      <div className="container mx-auto px-6 md:px-16 lg:px-32 flex flex-col  text-center md:text-left md:items-start mt-[2%]">
-        <img src={profilePic} className="rounded-full w-32 md:w-[26%] lg:w-[12%] h-auto" alt="Manoj Profile" />
+      <div className="container mx-auto px-1 md:px-0 lg:px-32 flex flex-col  text-center md:text-left md:items-start ">
+        <img src={profilePic} className="rounded-full w-32 md:w-[20%] lg:w-28 h-auto" alt="Manoj Profile" />
 
-        <div className="mt-4 md:mt-6 bg-[#e5e9eb] font-medium tracking-wider px-3 py-1 rounded-full flex items-center w-fit">
+        <div className="mt-4 md:mt-6 lg:mt-2 bg-[#e5e9eb] font-medium tracking-wider px-3 py-1 rounded-full flex items-center w-fit">
           <FaRegDotCircle color="#047df7" size={12} />
-          <span className="ml-2 text-xs text-[#2d4a5e]">Available for Work</span>
+          <span className="ml-2 text-xs text-[#2d4a5e]">Open for Work</span>
         </div>
       </div>
 
       {/* Title Section */}
-      <div className="container mx-auto px-6 md:px-16 lg:px-32 mt-6  md:text-left">
-        <p className="text-2xl md:text-4xl font-bold text-[#04263e] leading-tight">
+      <div className="container mx-auto px-1 md:px-0 lg:px-32 mt-[1%]  md:text-left">
+        <p className="text-2xl md:text-3xl font-bold text-[#04263e] leading-tight">
           Passionate MERN Developer.
         </p>
-        <p className="text-2xl md:text-4xl font-bold text-[#04263e] leading-tight">
+        <p className="text-2xl md:text-3xl font-bold text-[#04263e] leading-tight">
           Building Intuitive & Scalable Web Solutions
         </p>
-        <span className="text-2xl md:text-4xl font-bold text-[#04263e]">
+        <span className="text-2xl md:text-3xl font-bold text-[#04263e]">
           For Growing Startups.
         </span>
       </div>
 
       {/* Bio Section */}
-      <div className="container mx-auto px-6 md:px-16 lg:px-32 mt-4  md:text-left">
+      <div className="container mx-auto px-1 md:px-0 lg:px-32 mt-4  md:text-left">
         <p className="text-sm md:text-base text-gray-500 font-medium">
           I'm Manoj, a MERN stack developer with one year of experience.
         </p>
@@ -89,6 +91,22 @@ const Header = () => {
           Technology evolves every day, and I strive to grow, adapt, and improve my skills continuously.
         </p>
       </div>
+
+      <div className="container mx-auto px-1 md:px-0 lg:px-32 mt-[2.8%]  md:text-left">
+        <a className="font-figtree font-bold text-xs md:text-base lg:text-base text-[#0370DD] border-[#0370DD] py-1 lg:py-3 px-4 border-y-[1px] border-x-[1px] rounded-lg hover:cursor-pointer hover:border-slate-950 hover:text-black  hover:transition-all duration-700 ">
+          All Work
+        </a>
+      </div>
+      <div className="container mx-auto px-1 md:px-0 lg:px-32   md:text-left">
+      <div className="flex justify-end">
+        <a href="https://www.linkedin.com/in/manoj-kumar10" target="_blank">
+
+      <FaLinkedin className="hover:text-[#0370DD]"/>
+        </a>
+        </div>  
+        <BsArrowDown size={20}/>
+      </div >
+
     </>
   );
 };

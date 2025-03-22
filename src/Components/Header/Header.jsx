@@ -4,9 +4,16 @@ import { FaTimes, FaRegDotCircle } from "react-icons/fa";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FaLinkedin } from "react-icons/fa";
 import { BsArrowDown } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const scrollToWorks = (sectionSelected) => {
+    const section = document.getElementById(sectionSelected);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -16,11 +23,11 @@ const Header = () => {
           <div className="text-4xl md:text-4xl  font-bold text-[#04263e] tracking-tight">manoj</div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-6 lg:space-x-8 text-base font-medium">
-            <a href="#" className="text-gray-900 hover:text-[#0370DD]">Home</a>
-            <a href="#" className="text-gray-900 hover:text-[#0370DD]">Work</a>
-            <a href="#" className="text-gray-900 hover:text-[#0370DD]">About</a>
-            <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-[#0370DD]">Resume</a>
+          <nav className="hidden md:flex space-x-6 lg:space-x-8 text-base font-medium ">
+            <a   className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Home</a>
+            <a onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Work</a>
+            <a onClick={()=>scrollToWorks("Footer-Section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">About</a>
+            <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Resume</a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -98,12 +105,14 @@ const Header = () => {
         </a>
       </div>
       <div className="container mx-auto px-1 md:px-0 lg:px-32   md:text-left">
-      <div className="flex justify-end">
-        <a href="https://www.linkedin.com/in/manoj-kumar10" target="_blank">
-
-      <FaLinkedin className="hover:text-[#0370DD]"/>
+      <div className="flex justify-end md:justify-end items-center gap-4">
+        <a href="https://www.linkedin.com/in/manoj-kumar10" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className="hover:text-[#0370DD] text-lg" />
         </a>
-        </div>  
+        <a href="https://github.com/debugmanoj" target="_blank" rel="noopener noreferrer">
+          <FaGithub className="hover:text-[#0370DD] text-lg" />
+        </a>
+      </div>
         <BsArrowDown size={20}/>
       </div >
 

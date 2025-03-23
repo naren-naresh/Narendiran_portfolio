@@ -51,9 +51,9 @@ const Header = () => {
             >
 
               <nav className="mt-[10%] text-left flex flex-col space-y-6 text-md font-medium w-full">
-                <a href="#" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-md hover:translate-x-1 duration-300">Home</a>
-                <a href="#" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Work</a>
-                <a href="#" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">About</a>
+                <a href="#"  className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-md hover:translate-x-1 duration-300">Home</a>
+                <a href="#" onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Work</a>
+                <a href="#" onClick={()=>scrollToWorks("Footer-Section")}className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">About</a>
                 <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Resume</a>
               </nav>
             </div>

@@ -41,11 +41,12 @@ const Footer = () => {
 
               <a href="https://www.linkedin.com/in/manoj-kumar10" target="_blank" className=" text-xs md:text-xs lg:text-xs font-medium  text-[#04263e] "> Linked In </a>
               <a href="https://github.com/debugmanoj" target="_blank" className=" text-xs md:text-xs lg:text-xs font-medium  text-[#04263e] "> GitHub </a>
+              <a href="mailto:manojkumarwork01@gmail.com" target="_blank" className=" text-xs md:text-xs lg:text-xs font-medium  text-[#04263e] "> Mail </a>
             </div>
             <span className={`text-black hidden font-medium text-sm md:text-base lg:text-base cursor-default  md:inline`}>Working Fulltime</span>
           </div>
           <div className='text-center text-xs'>
-            @Manoj Kumar
+            © Manoj Kumar
           </div>
         </div>
       </div>

@@ -3,8 +3,8 @@ import profilePic from "../../assets/Raw_image_edited_circle_v2.webp";
 import { FaTimes, FaRegDotCircle } from "react-icons/fa";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FaLinkedin } from "react-icons/fa";
-import { BsArrowDown } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +12,9 @@ const Header = () => {
     const section = document.getElementById(sectionSelected);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+    }
+    if(isOpen){
+      setIsOpen(false)
     }
   };
 
@@ -24,8 +27,8 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6 lg:space-x-8 text-base font-medium ">
-            <a   className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Home</a>
-            <a onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Work</a>
+            {/* <a   className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Home</a> */}
+            <a onClick={()=>scrollToWorks("Works-sections")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Work</a>
             <a onClick={()=>scrollToWorks("Footer-Section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">About</a>
             <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Resume</a>
           </nav>
@@ -51,8 +54,8 @@ const Header = () => {
             >
 
               <nav className="mt-[10%] text-left flex flex-col space-y-6 text-md font-medium w-full">
-                <a href="#"  className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-md hover:translate-x-1 duration-300">Home</a>
-                <a href="#" onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Work</a>
+                {/* <a href="#"  className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-md hover:translate-x-1 duration-300">Home</a> */}
+                <a href="#" onClick={()=>scrollToWorks("Works-sections")} className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Work</a>
                 <a href="#" onClick={()=>scrollToWorks("Footer-Section")}className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">About</a>
                 <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Resume</a>
               </nav>
@@ -75,19 +78,19 @@ const Header = () => {
 
       {/* Title Section */}
       <div className="container mx-auto px-1 md:px-0 lg:px-32 mt-[1%]  md:text-left">
-        <p className="text-2xl md:text-3xl font-bold text-[#04263e] leading-tight">
+        <p className="text-lg md:text-3xl font-bold text-[#04263e] leading-tight">
           Passionate MERN Developer.
         </p>
-        <p className="text-2xl md:text-3xl font-bold text-[#04263e] leading-tight">
+        <p className="text-lg md:text-3xl font-bold text-[#04263e] leading-tight">
           Building Intuitive & Scalable Web Solutions
         </p>
-        <span className="text-2xl md:text-3xl font-bold text-[#04263e]">
+        <span className="text-lg md:text-3xl font-bold text-[#04263e]">
           For Growing Startups.
         </span>
       </div>
 
       {/* Bio Section */}
-      <div className="container mx-auto px-1 md:px-0 lg:px-32 mt-4  md:text-left">
+      <div className="container mx-auto px-1 md:px-0 lg:px-32 mt-4  md:text-left ">
         <p className="text-sm md:text-base text-gray-500 font-medium">
           I'm Manoj, a MERN stack developer with one year of experience.
         </p>
@@ -99,21 +102,24 @@ const Header = () => {
         </p>
       </div>
 
-      <div className="container mx-auto px-1 md:px-0 lg:px-32 mt-[2.8%]  md:text-left">
+      {/* <div className="container mx-auto px-1 md:px-0 lg:px-32 mt-[2.8%]  md:text-left">
         <a className="font-figtree font-bold text-xs md:text-base lg:text-base text-[#0370DD] border-[#0370DD] py-1 lg:py-3 px-4 border-y-[1px] border-x-[1px] rounded-lg hover:cursor-pointer hover:border-slate-950 hover:text-black  hover:transition-all duration-700 ">
           All Work
         </a>
-      </div>
-      <div className="container mx-auto px-1 md:px-0 lg:px-32   md:text-left">
+      </div> */}
+      <div className="container mx-auto px-1 mt-[3%] md:px-0 lg:px-32   md:text-left">
       <div className="flex justify-end md:justify-end items-center gap-4">
         <a href="https://www.linkedin.com/in/manoj-kumar10" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="hover:text-[#0370DD] text-lg" />
+          <FaLinkedin className="hover:text-[#0370DD] text-md lg:text-lg" />
         </a>
         <a href="https://github.com/debugmanoj" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="hover:text-[#0370DD] text-lg" />
+          <FaGithub className="hover:text-[#0370DD] text-md lg:text-lg" />
+        </a>
+        <a href="mailto:manojkumarwork01@gmail.com" target="_blank" rel="noopener noreferrer">
+          <SiGmail className="hover:text-[#0370DD] text-md lg:text-lg " />
         </a>
       </div>
-        <BsArrowDown size={20}/>
+        {/* <BsArrowDown size={20}/> */}
       </div >
 
     </>

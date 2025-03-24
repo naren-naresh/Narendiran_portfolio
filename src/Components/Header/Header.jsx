@@ -9,14 +9,16 @@ import { SiGmail } from "react-icons/si";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const scrollToWorks = (sectionSelected) => {
-    const section = document.getElementById(sectionSelected);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-    if(isOpen){
-      setIsOpen(false)
+    if (isOpen) {
+      setIsOpen(false);
+      setTimeout(() => {
+        document.getElementById(sectionSelected)?.scrollIntoView({ behavior: "smooth" });
+      }, 200); // Small delay to allow state update before scrolling
+    } else {
+      document.getElementById(sectionSelected)?.scrollIntoView({ behavior: "smooth" });
     }
   };
+  
 
   return (
     <>
@@ -28,7 +30,7 @@ const Header = () => {
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6 lg:space-x-8 text-base font-medium ">
             {/* <a   className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Home</a> */}
-            <a onClick={()=>scrollToWorks("Works-sections")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Work</a>
+            <a onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Work</a>
             <a onClick={()=>scrollToWorks("Footer-Section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">About</a>
             <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Resume</a>
           </nav>
@@ -55,7 +57,7 @@ const Header = () => {
 
               <nav className="mt-[10%] text-left flex flex-col space-y-6 text-md font-medium w-full">
                 {/* <a href="#"  className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-md hover:translate-x-1 duration-300">Home</a> */}
-                <a href="#" onClick={()=>scrollToWorks("Works-sections")} className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Work</a>
+                <a href="#" onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Work</a>
                 <a href="#" onClick={()=>scrollToWorks("Footer-Section")}className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">About</a>
                 <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Resume</a>
               </nav>

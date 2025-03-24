@@ -11,7 +11,7 @@ const Body = () => {
             <img
               src={work?.img}
               alt="Project"
-              className="max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:cursor-pointer"
+              className="max-w-full px-1 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:cursor-pointer"
             />
             <h2 className="text-sm md:text-lg lg:text-lg font-semibold text-[#04263e] hover:cursor-pointer">
               {work?.title}

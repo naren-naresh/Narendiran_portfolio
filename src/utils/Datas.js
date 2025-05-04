@@ -1,13 +1,30 @@
 import MyWssBm from "../assets/MY_WWS_BM.png"
 import ContactBook from "../assets/Contact_book.png"
+import LinkTrim from "../assets/LinkTrim-05-04-2025_05_45_PM.webp"
 
 const Works = [
+    {
+        img: LinkTrim,
+        title: "LinkTrim",
+        description: "React Js | Node Js | Express Js | Mongo DB",
+        appLink:"https://url-shortner-steel-rho.vercel.app/",
+        isAvailalbeLink:true
+    },
     {
         img: ContactBook,
         title: "Contact Book",
         description: "React Js | Node Js | Express Js | Mongo DB",
-        appLink:"https://contact-manager-client-seven.vercel.app/"
+        appLink:"https://contact-manager-client-seven.vercel.app/",
+        isAvailalbeLink:true
     },
+    {
+        img: MyWssBm,
+        title: "WWS Business Manager ( Organisation Project )",
+        description: "React Js | Node Js | Express Js | Mongo DB",
+        isAvailalbeLink:false
+        // appLink:""
+    },
+
 
 ];
 
@@ -34,13 +51,6 @@ const otherWorks = [
     },
     {
         id:"4",
-        title:"Url Shortener",
-        techStacks:"MERN - 2024",
-        appLink:"https://url-shortner-steel-rho.vercel.app/"
-
-    },
-    {
-        id:"5",
         title:"Redux Listener Middleware",
         techStacks:"React Js - 2024",
         appLink:"https://github.com/debugmanoj/Web_worker_api"

@@ -19,7 +19,7 @@ const Body = () => {
               alt="Project"
               className="max-w-full px-1 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:cursor-pointer"
               data-link={work?.appLink}  // ✅ official way to store custom data
-              onClick={handleNavigateUser}
+              onClick={work.isAvailalbeLink?handleNavigateUser:null}
             />
             <h2 className="text-sm md:text-lg lg:text-lg font-semibold text-[#04263e] hover:cursor-pointer">
               {work?.title}

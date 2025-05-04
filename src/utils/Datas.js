@@ -1,5 +1,5 @@
 import MyWssBm from "../assets/MY_WWS_BM.png"
-import ContactBook from "../assets/Contact_book.png"
+import ContactBook from "../assets/Contact-Book-05-04-2025_09_33_PM.webp"
 import LinkTrim from "../assets/LinkTrim-05-04-2025_05_45_PM.webp"
 
 const Works = [

@@ -19,7 +19,7 @@ const Works = [
     },
     {
         img: MyWssBm,
-        title: "WWS Business Manager ( Organisation Project )",
+        title: "WWS Business Manager (Company Project - Private)",
         description: "React Js | Node Js | Express Js | Mongo DB",
         isAvailalbeLink:false
         // appLink:""

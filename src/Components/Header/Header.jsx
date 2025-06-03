@@ -32,7 +32,7 @@ const Header = () => {
             {/* <a   className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Home</a> */}
             <a onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Work</a>
             <a onClick={()=>scrollToWorks("Footer-Section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">About</a>
-            <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Resume</a>
+            <a href="https://drive.google.com/file/d/1UwyDcVPKg2jZMOTemluSzAOqCxFzVP3y/view?usp=drive_link" target="_blank" className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Resume</a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -59,7 +59,7 @@ const Header = () => {
                 {/* <a href="#"  className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-md hover:translate-x-1 duration-300">Home</a> */}
                 <a href="#" onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Work</a>
                 <a href="#" onClick={()=>scrollToWorks("Footer-Section")}className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">About</a>
-                <a href="https://drive.google.com/file/d/11hc9oydZzpqXiBpz9LyX88NnyCKB_nCE/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Resume</a>
+                <a href="https://drive.google.com/file/d/1UwyDcVPKg2jZMOTemluSzAOqCxFzVP3y/view?usp=drive_link" target="_blank" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Resume</a>
               </nav>
             </div>
             {/* Clickable Overlay to Close Sidebar */}

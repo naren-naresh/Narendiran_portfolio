@@ -6,21 +6,28 @@ const Works = [
     {
         img: LinkTrim,
         title: "LinkTrim",
-        description: "React Js | Node Js | Express Js | Mongo DB",
+        techStack: "React Js | Node Js | Express Js | Mongo DB",
+        description: "A Full-stack URL shortening application built using the MERN stack. Features include user authentication (JWT & bcrypt), allowing registered users to easily shorten long URLs and manage their trimmed links.",
         appLink:"https://url-shortner-steel-rho.vercel.app/",
+        frontendLink: "https://github.com/debugmanoj/URL-shortner",  // Add GitHub Frontend link
+        backendLink: "https://github.com/debugmanoj/url_API",  // Add GitHub Backend link
         isAvailalbeLink:true
     },
     {
         img: ContactBook,
         title: "Contact Book",
-        description: "React Js | Node Js | Express Js | Mongo DB",
+        techStack: "React Js | Node Js | Express Js | Mongo DB",
+         description: "A full-stack contact management application built using the MERN stack. Features secure user authentication with cookies and session handling. Designed with a clean, responsive UI for adding, editing, viewing, and deleting contacts.",
         appLink:"https://contact-manager-client-seven.vercel.app/",
+         frontendLink: "https://github.com/debugmanoj/Contact_Manager_Client",  // Add GitHub Frontend link
+        backendLink: "https://github.com/debugmanoj/Contact_Manager_Server",  // Add GitHub Backend link
         isAvailalbeLink:true
     },
     {
         img: MyWssBm,
         title: "WWS Business Manager (Company Project - Private)",
-        description: "React Js | Node Js | Express Js | Mongo DB",
+        description: "A web application designed for verifying patient insurance information, with roles like E&B Data Integrity Specialist and E&B Caller Specialist to ensure the accuracy of insurance details and prevent errors in claim processing.",
+        techStack: "React Js | Node Js | Express Js | Mongo DB",
         isAvailalbeLink:false
         // appLink:""
     },

@@ -5,6 +5,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { Skills } from "../../utils/Datas.js";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,8 +31,10 @@ const Header = () => {
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6 lg:space-x-8 text-base font-medium ">
             {/* <a   className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Home</a> */}
-            <a onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Work</a>
-            <a onClick={()=>scrollToWorks("Footer-Section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">About</a>
+            <a onClick={()=>scrollToWorks("about-section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">About</a>
+            <a onClick={()=>scrollToWorks("skills-section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Skills</a>
+            <a onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Projects</a>
+            <a onClick={()=>scrollToWorks("contact-section")} className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Contact</a>
             <a href="https://drive.google.com/file/d/1tat0qXA9C_Z8cKPDQehlrYQLfDfHLzv_/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-[#0370DD] cursor-pointer">Resume</a>
           </nav>
 
@@ -57,8 +60,10 @@ const Header = () => {
 
               <nav className="mt-[10%] text-left flex flex-col space-y-6 text-md font-medium w-full">
                 {/* <a href="#"  className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-md hover:translate-x-1 duration-300">Home</a> */}
-                <a href="#" onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Work</a>
-                <a href="#" onClick={()=>scrollToWorks("Footer-Section")}className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">About</a>
+                <a href="#" onClick={()=>scrollToWorks("about-section")} className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">About</a>
+                <a href="#" onClick={()=>scrollToWorks("skills-section")} className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Skills</a>
+                <a href="#" onClick={()=>scrollToWorks("works-section")} className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Projects</a>
+                <a href="#" onClick={()=>scrollToWorks("contact-section")}className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Contact</a>
                 <a href="https://drive.google.com/file/d/1tat0qXA9C_Z8cKPDQehlrYQLfDfHLzv_/view?usp=sharing" target="_blank" className="text-gray-900 hover:text-blue-600 hover:bg-slate-100 hover:p-3 hover:rounded-sm hover:translate-x-1 duration-300">Resume</a>
               </nav>
             </div>
@@ -103,6 +108,8 @@ const Header = () => {
           Technology evolves every day, and I strive to grow, adapt, and improve my skills continuously.
         </p>
       </div>
+
+      
 
       {/* <div className="container mx-auto px-1 md:px-0 lg:px-32 mt-[2.8%]  md:text-left">
         <a className="font-figtree font-bold text-xs md:text-base lg:text-base text-[#0370DD] border-[#0370DD] py-1 lg:py-3 px-4 border-y-[1px] border-x-[1px] rounded-lg hover:cursor-pointer hover:border-slate-950 hover:text-black  hover:transition-all duration-700 ">

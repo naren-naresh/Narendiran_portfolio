@@ -80,5 +80,51 @@ const otherWorks = [
         appLink: "https://github.com/debugmanoj?tab=repositories"
     },
 
+];
+
+const Skills = [
+    {
+        name: "React Js",
+    },
+    {
+        name: "Node Js",
+    },
+    {
+        name: "Express Js",
+    },
+    {
+        name: "Mongo DB",
+    },
+    {
+        name: "Javascript",
+    },
+    {
+        name: "HTML",
+    },
+    {
+        name: "CSS",
+    },
+    {
+        name: "Tailwind CSS",
+    },
+    {
+        name: "Git",
+    },
+    {
+        name: "GitHub",
+    },
+    {
+        name: "Redux",
+    },
+    {
+        name: "JWT",
+    },
+    {
+        name: "Nodemailer",
+    },
+    {
+        name: "bcrypt",
+    }
 ]
-export { Works, otherWorks }
+
+export { Works, otherWorks, Skills }

@@ -2,36 +2,34 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div id="about-section" className="container mx-auto px-1    md:px-0 lg:px-32 py-4 font-figtree w-full">
-      <div className="font-bold text-3xl md:text-5xl lg:text-5xl text-[#04263e]">
-        About
-      </div>
-      <div className="mt-[1.5%] lg:grid grid-cols-2 gap-5">
-        <div className="text-gray-500 text-sm md:text-base lg:text-base lg:w-full mt-[0.8%]">
-          I’m Manoj Kumar, a passionate MERN Stack Developer from Vellore, Tamil Nadu, India, with a strong enthusiasm for working with tech startups. I believe that learning is a lifelong journey, and I embrace knowledge from everyone, regardless of their background.
-          <div className='mt-[3%]'>
-            <span className='text-black '>Little Background</span>
+    <div id="about-section" className="container mx-auto px-1 md:px-0 lg:px-32 py-4 font-figtree w-full">
+      <div className="font-bold text-3xl md:text-5xl lg:text-5xl text-[#04263e]">About</div>
 
-            <span className="text-gray-500 text-sm md:text-base lg:text-base lg:w-full mt-[2%] block">
-              I completed my SSLC with 86% and HSC with 84%, followed by a Bachelor’s degree in Computer Science Engineering. After graduation, I discovered my passion for full-stack web development and chose the MERN stack as my specialization. Since then, I have been dedicating my time to mastering my skills, building scalable applications, and staying up-to-date with the latest industry trends.
+      <div className="mt-6 lg:grid grid-cols-2 gap-8">
+        <div className="text-gray-700 text-sm md:text-base lg:text-base">
+          <p className="mb-3">
+            Hi — I’m <strong>Narendiran E</strong>, a results-driven MERN Stack Developer with <strong>2+ years</strong> of experience building scalable, high-performance web applications — primarily for healthcare SaaS.
+          </p>
 
-              Currently, I’m working as a Software Developer at Wonder Worth Solutions, where I contribute to building robust and efficient applications while continuously expanding my expertise. When I’m not immersed in code, I find joy in hitting the road on my bike, soaking in the serenity of nature, and discovering new places that fuel both my creativity and adventurous spirit.
+          <p className="mb-3">
+            I’ve designed and maintained enterprise-grade platforms like <strong>WWS Business Manager</strong> and <strong>WWS Nexus CRM</strong>, built secure REST & GraphQL APIs, implemented JWT-based authentication, and set up CI/CD deployments on AWS. I focus on performance, security, and reusable frontend components.
+          </p>
 
-            </span>
-          </div>
+          <p>
+            Key achievements: improved API latency and app performance by <strong>~40%</strong>, delivered over <strong>30 reusable React components</strong>, and implemented role-based access and real-time features such as chat & subscriptions.
+          </p>
         </div>
-        <div id="default-carousel" className=" relative w-full">
-          <div className="overflow-hidden rounded-lg md:h-96 relative">
-            <div className=" w-full h-full">
-              <img className="absolute w-full h-full object-cover opacity-0 animate-fade1" src="/Manoj_1.webp" alt="Carousel1" />
-              <img className="absolute w-full h-full object-cover opacity-0 animate-fade2" src="/Nature.webp" alt="Carousel2" />
+
+        <div className="text-gray-600">
+          <div className="bg-white p-4 rounded-lg shadow-sm">
+            <div className="font-medium">Contact</div>
+            <div className="mt-2 text-sm">
+              <div>📍 Tiruvannamalai, Arani, Tamil Nadu</div>
+              <div>✉️ <a href="mailto:narendirannaresh396@gmail.com">narendirannaresh396@gmail.com</a></div>
+              <div>📞 +91 93847 62499</div>
+              <div className="mt-2"><a href="/assets/Narendiran_E_Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600">Download Resume</a></div>
             </div>
           </div>
-        </div>
-        {/* <div>
-          <a href="" className='p-4 py-2 bg-[#0370DD] text-white rounded-lg font-bold transition-all duration-500 hover:bg-blue-950'>Read More</a>
-        </div> */}
-        <div>
         </div>
       </div>
     </div>

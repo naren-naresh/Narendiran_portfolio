@@ -6,19 +6,15 @@ const Footer = () => {
       <div id="contact-section" className="mb-2 font-bold text-3xl md:text-5xl lg:text-5xl text-[#04263e]">Contact</div>
       <div className="w-full mt-6">
         <div >
-          <div className="flex justify-between items-center transition-all duration-500  border-gray-200 px-1 py-3">
-            <div className='flex gap-7'>
-
-              <a href="https://www.linkedin.com/in/manoj-kumar10" target="_blank" className=" text-xs md:text-xs lg:text-xs font-medium  text-[#04263e] "> Linked In </a>
-              <a href="https://github.com/debugmanoj" target="_blank" className=" text-xs md:text-xs lg:text-xs font-medium  text-[#04263e] "> GitHub </a>
-              <a href="mailto:manojkumarwork01@gmail.com" target="_blank" className=" text-xs md:text-xs lg:text-xs font-medium  text-[#04263e] "> Mail </a>
-              
-              <span  className=" text-xs md:text-xs lg:text-xs font-medium  text-[#04263e] "> +91  908397440 </span>
-            </div>
-            <span className={`text-black hidden font-medium text-sm md:text-base lg:text-base cursor-default  md:inline`}>Working Fulltime</span>
+          <div className='flex gap-7'>
+            <a href="https://www.linkedin.com/in/narendiran-e-665102287" target="_blank" rel="noopener noreferrer" className="text-xs lg:text-xs font-medium text-[#04263e]">LinkedIn</a>
+            <a href="https://github.com/<your-github>" target="_blank" rel="noopener noreferrer" className="text-xs lg:text-xs font-medium text-[#04263e]">GitHub</a>
+            <a href="mailto:narendirannaresh396@gmail.com" target="_blank" rel="noopener noreferrer" className="text-xs lg:text-xs font-medium text-[#04263e]">Mail</a>
+            <span className="text-xs md:text-xs lg:text-xs font-medium text-[#04263e]">+91 93847 62499</span>
           </div>
+
           <div className='text-center text-xs'>
-            © Manoj Kumar
+            © Narendiran 
           </div>
         </div>
       </div>

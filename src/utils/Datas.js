@@ -7,20 +7,20 @@ const Works = [
     title: "WWS Nexus CRM",
     techStack: "React.js | Redux Toolkit | GraphQL (Apollo) | Node.js | MongoDB | AWS",
     description: "Designed & built a real-time CRM connecting DME providers, patients, and physicians. Implemented secure GraphQL APIs (subscriptions for real-time sync), JWT auth with refresh, role-based access control, real-time chat, and CI/CD deployment using GitHub Actions + AWS CodePipeline/CodeDeploy.",
-    appLink: "#",           
-    frontendLink: "#",      
-    backendLink: "#",
-    isAvailableLink: false
+    appLink: "https://www.gonexuscare.com/",           
+    // frontendLink: "#",      
+    // backendLink: "#",
+    isAvailableLink: true
   },
   {
     img: MyWssBm,
     title: "WWS Business Manager",
     techStack: "React.js | Node.js | Express | MongoDB | JWT",
     description: "Built a secure insurance verification system with role-based workflows, schema validation, and optimized MongoDB queries. Delivered 20+ reusable frontend components and 30+ REST endpoints. Performance improvements reduced API latency by ~40% and lowered claim rejections.",
-    appLink: "#",
-    frontendLink: "#",
-    backendLink: "#",
-    isAvailableLink: false
+    appLink: "https://www.mywwsbm.com/",
+    // frontendLink: "#",
+    // backendLink: "#",
+    isAvailableLink: true
   },
 //   {
 //     img: EcomPreview,

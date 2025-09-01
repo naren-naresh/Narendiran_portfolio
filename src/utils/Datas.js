@@ -1,5 +1,6 @@
 import MyWssBm from "../assets/MY_WWS_BM.png"
 import WwsNexus from "../assets/wws_nexus_preview.png"
+import ModernPage from "../assets/Modern-react-landing-page.png"
 
 const Works = [
   {
@@ -34,6 +35,19 @@ const Works = [
 //   }
 ]
 
+const otherWorks = [
+    {
+    img: ModernPage,
+    title: "Modern Landing Page",
+    techStack: "React.js | Tailwind Css | Framer Motion",
+    description: "Designed & built a real-time CRM connecting DME providers, patients, and physicians. Implemented secure GraphQL APIs (subscriptions for real-time sync), JWT auth with refresh, role-based access control, real-time chat, and CI/CD deployment using GitHub Actions + AWS CodePipeline/CodeDeploy.",
+    appLink: "https://modern-landing-page-mu-ten.vercel.app/#home",           
+    // frontendLink: "#",      
+    // backendLink: "#",
+    isAvailableLink: true
+  },
+]
+
 
 const Skills = [
   { name: "React.js" },
@@ -56,4 +70,4 @@ const Skills = [
   { name: "Jest / Vitest" }
 ]
 
-export { Works, Skills }
+export { Works, Skills, otherWorks }

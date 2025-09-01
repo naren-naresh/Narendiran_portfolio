@@ -28,7 +28,7 @@ const About = () => {
               <div>📞 +91 93847 62499</div>
               <div className="mt-2">
                 <a
-                  href="/assets/Narendiran_E_Resume.pdf"
+                  href="https://drive.google.com/uc?export=download&id=10AMJ6ESPKP-EeODv3fS36zqkEobFa91Z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-blue-600 underline"

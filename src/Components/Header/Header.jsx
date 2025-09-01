@@ -40,7 +40,7 @@ const Header = () => {
               Contact
             </button>
             <a
-              href="/assets/Narendiran_E_Resume.pdf"
+              href="https://drive.google.com/uc?export=download&id=10AMJ6ESPKP-EeODv3fS36zqkEobFa91Z"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white bg-[#0370DD] px-3 py-1 rounded-md hover:bg-[#025bb5] transition"
@@ -78,7 +78,7 @@ const Header = () => {
                   Contact
                 </button>
                 <a
-                  href="/assets/Narendiran_E_Resume.pdf"
+                  href="https://drive.google.com/uc?export=download&id=10AMJ6ESPKP-EeODv3fS36zqkEobFa91Z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white bg-[#0370DD] px-3 py-1 rounded-md hover:bg-[#025bb5] transition"

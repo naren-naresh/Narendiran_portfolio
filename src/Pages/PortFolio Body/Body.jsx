@@ -1,4 +1,4 @@
-import { Works } from "../../utils/Datas.js";
+import { otherWorks, Works } from "../../utils/Datas.js";
 
 const Body = () => {
 
@@ -79,21 +79,21 @@ const Body = () => {
       </div>
 
       {/* Other Works Section */}
-      {/* <div className="mt-4 ml-4">
+      <div className="mt-4 ml-4">
         <div className="font-bold text-3xl md:text-5xl lg:text-5xl text-[#04263e]">Other Works</div>
         <div className="text-gray-500 text-sm md:text-base lg:text-base lg:w-[60%] mt-[0.8%]">
           With one year of experience as a MERN Stack Developer, I have worked on similar projects, continuously,{" "}
           <span className="font-semibold text-gray-700">enhancing my skills</span> in web application development and exploring new design patterns.
         </div>
-      </div> */}
+      </div>
 
       {/* Footer Section */}
-      {/* <div className="w-full mt-6 ml-4">
+      <div className="w-full mt-6 ml-4">
         {otherWorks?.map((work, index) => {
           return <div key={work.id}>
             <a href={work.appLink} target="_blank" className="flex justify-between items-center transition-all duration-500  border-gray-200 px-1 py-3  hover:bg-blue-50 hover:rounded-lg hover:px-3   ">
               <span className=" text-sm md:text-lg lg:text-lg font-medium  text-[#04263e] "> {work?.title}</span>
-              <span className={`text-gray-500 font-medium text-sm md:text-base lg:text-base cursor-default ${work.id === "99" ? null : "hidden"} md:inline`}>{work.techStacks}</span>
+              <span className={`text-gray-500 font-medium text-sm md:text-base lg:text-base cursor-default ${work.id === "99" ? null : "hidden"} md:inline`}>{work.techStack}</span>
             </a>
             <div className="border-t mt-[0.1%] border-gray-100" />
           </div>
@@ -101,7 +101,7 @@ const Body = () => {
         })}
 
 
-      </div> */}
+      </div>
     </div>
   );
 };

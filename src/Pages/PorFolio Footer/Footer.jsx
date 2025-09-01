@@ -31,7 +31,7 @@ const Footer = () => {
             Mail
           </a>
           <a
-            href="/assets/Narendiran_E_Resume.pdf"
+            href="https://drive.google.com/uc?export=download&id=10AMJ6ESPKP-EeODv3fS36zqkEobFa91Z"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs md:text-xs font-medium text-[#04263e] underline hover:text-[#0370DD]"

@@ -1,6 +1,7 @@
 import MyWssBm from "../assets/MY_WWS_BM.png"
 import WwsNexus from "../assets/wws_nexus_preview.png"
 import ModernPage from "../assets/Modern-react-landing-page.png"
+import CodeTutor from "../assets/Code-Tutor-Ui.png"
 
 const Works = [
   {
@@ -37,15 +38,25 @@ const Works = [
 
 const otherWorks = [
     {
-    img: ModernPage,
-    title: "Modern Landing Page",
-    techStack: "React.js | Tailwind Css | Framer Motion",
-    description: "Designed & built a real-time CRM connecting DME providers, patients, and physicians. Implemented secure GraphQL APIs (subscriptions for real-time sync), JWT auth with refresh, role-based access control, real-time chat, and CI/CD deployment using GitHub Actions + AWS CodePipeline/CodeDeploy.",
-    appLink: "https://modern-landing-page-mu-ten.vercel.app/#home",           
-    // frontendLink: "#",      
-    // backendLink: "#",
-    isAvailableLink: true
-  },
+      img: ModernPage,
+      title: "Modern Landing Page",
+      techStack: "React.js | Tailwind Css | Framer Motion",
+      description: "Modern Landing page using react tailwind farmer motion",
+      appLink: "https://modern-landing-page-mu-ten.vercel.app/#home",           
+      // frontendLink: "#",      
+      // backendLink: "#",
+      isAvailableLink: true
+    },
+    {
+      img: CodeTutor,
+      title: "Modern Landing Page #1",
+      techStack: "React.js | Tailwind Css",
+      description: "Modern Landing page using react tailwind farmer motion",
+      appLink: "https://react-landing-page-1-rho.vercel.app/",           
+      // frontendLink: "#",      
+      // backendLink: "#",
+      isAvailableLink: true
+    },
 ]
 
 
